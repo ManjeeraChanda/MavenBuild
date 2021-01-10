@@ -12,7 +12,7 @@ node('master') {
 	}
 
 	stage ('Sonar Analysis'){
-		sh 'mvn sonar:sonar -Dsonar.host.url=http://http://54.152.180.50:9000/ -Dsonar.login=6c78ae4654d67dfeb70f0e5c91983c74c4c2fe7f'
+		sh 'mvn sonar:sonar -Dsonar.host.url=http://54.152.180.50:9000/ -Dsonar.login=6c78ae4654d67dfeb70f0e5c91983c74c4c2fe7f'
 	}
 
 	stage ('Archive Artifacts'){
